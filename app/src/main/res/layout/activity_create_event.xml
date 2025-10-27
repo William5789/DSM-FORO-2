@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07869B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Título del formulario -->
+        <TextView
+            android:id="@+id/etTitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Crear Nuevo Evento"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Campos -->
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2196F3"
+            android:hint="Título del evento"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:backgroundTint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2196F3"
+            android:hint="Fecha (ej: 27/05/2025)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:backgroundTint="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/etTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2196F3"
+            android:hint="Hora (ej: 14:00)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:backgroundTint="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2196F3"
+            android:hint="Ubicación"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:backgroundTint="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#2196F3"
+            android:gravity="top"
+            android:hint="Descripción"
+            android:minLines="3"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:backgroundTint="#FFFFFF"/>
+
+        <!-- Botón Crear Evento -->
+        <Button
+            android:id="@+id/btnCreateEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#4CAF50"
+            android:text="✅ Crear Evento"
+            android:textColor="#FFFFFF" />
+
+        <!-- Botón Regresar al Home -->
+        <Button
+            android:id="@+id/btnBackToHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9E9E9E"
+            android:text="⬅️ Volver al Inicio"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
